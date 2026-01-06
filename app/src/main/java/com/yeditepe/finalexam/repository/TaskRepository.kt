@@ -7,6 +7,7 @@ class TaskRepository(private val api: TaskApi) {
 
     suspend fun fetchTasks(): List<Task> {
         // TODO 1: Call API
+        val taskDtos = api.getTasks()
         // TODO 2: Convert TaskDto list to Task list
         return TODO("Provide the return value")
     }
